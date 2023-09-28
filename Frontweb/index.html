@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projeto Gerenciamento de Obra</title>
+</head>
+
+<body>
+     
+    <div class="container">
+        <!-- Cabeçalho de informações do sistema -->
+        <header>
+            <h1>Projeto Gerenciamento de Obra - GerObras</h1>
+        </header>
+
+        <div class="input-dados">
+            <div class="input_line1">
+                <input type="text" id="matNome" placeholder="Nome do Material">
+                <input type="text" id="matQuant" placeholder="Quantidade">
+                <input type="text" id="matCusto" placeholder="Custo ">
+                <input type="text" id="matNF" placeholder="Nota Fiscal">
+                <span onclick="newItem()" class="addButton">Adicionar Material</span>
+            </div>
+            <div class="show_lines1">
+                <table id="mytable">
+                    <tr>
+                        <th id="nome_mat">Nome do Material</th>
+                        <th id="quant_mat">Quantidade</th>
+                        <th id="cust_mat">Custo</th>
+                        <th id="nf_mat">Nota Fiscal</th>
+                        <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px" ></th>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+             
+        <div  class="show-dados">
+            <div class="input_line">
+                <input type="text" id="FornNome" placeholder="Nome do Fornecedor:">
+                <input type="text" id="FornCat" placeholder="Categoria do Fornecedor:">
+                <input type="text" id="FornTel" placeholder="Telefone:">
+                <input type="text" id="FornDesc" placeholder="Descrição do Fornecedor">
+                <span onclick="newItem1()" class="addButton1">Adicionar Fornecedor</span>
+            </div>
+            <div class="show_lines">
+                <table id="mytable1">
+                    <tr>
+                        <th id="nome_Forn">Nome do Fornecedor</th>
+                        <th id="cat_Forn">Categoria</th>
+                        <th id="tel_Forn">Telefone</th>
+                        <th id="desc_Forn">Descrição</th>
+                        <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px" ></th>
+                    </tr>               
+                </table>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+
+        <footer>
+            <h5>Trabalho de MVP3 PUC Rio 2023</h5>
+            
+        </footer>
+    </div> 
+    
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+html, body,
+ul,
+li {
+    font-family: tahoma;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(222, 241, 218); 
+    background-image: url(../Frontweb/imagens/phillipicastro_1332817713_16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+
+.container {
+    width: 96vw;
+    height: 94vh; 
+    display: grid;
+    padding: 12px;
+    border: 5px solid rgb(19, 140, 159); 
+    margin: 10px;
+    grid-template-areas: "header header header" 
+                        "inputdata showdata showdata"
+                        "footer footer footer";
+    grid-template-columns: auto auto auto; /* 3 colunas */
+    grid-template-rows: 80px 1fr 80px; /* 3 linhas */
+    gap: 1px;
+    border-radius: 4px;
+    
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(19, 140, 159);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+      
+
+}
+
+.input-dados {
+    grid-area: inputdata; 
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid hsl(0, 17%, 95%);
+    border-radius: 4px;
+    width: 84%;
+    height: 93%;
+} 
+
+.show-dados {
+    grid-area: showdata; 
+    border: 2px solid #f4f1f1;
+    margin: 5px;
+    padding: 5px;
+    overflow-y: scroll;
+    border-radius: 4px;
+    width: 100%;
+    height: 95%;
+}
+
+.input_line {
+    margin: 5px;
+    padding: 0px 0px;
+    height: 10%;
+    text-align: center;
+    display: block;
+}
+
+.show_lines {
+    margin: 8px;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 2px;
+    width: 94%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input_line1 {
+    margin: 5px;
+    padding: 0px 0px;
+    height: 10%;
+    text-align: center;
+    display: block;
+}
+
+.show_lines1 {
+    margin: 10px;
+    border: 3px solid rgb(249, 245, 245);
+    padding: 2px;
+    width: 96%;
+    height: auto;
+    display: auto;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(19, 140, 159);
+    color: #f7f3f3;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.input-dados:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.addButton1 {
+    margin: 3px;
+    padding: 3px 10px;
+    background-color: rgb(14, 245, 41);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.addButton1:hover {
+    background-color: #b52a2a;
+    color: rgb(14, 9, 9);
+}
+
+.close1:hover {
+    color: #f44336;
+    font-weight: bolder
+}
+
+.addButton {
+    margin: 3px;
+    padding: 3px 3px;
+    background-color: rgb(14, 245, 41);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.addButton:hover {
+    background-color: #b52a2a;
+    color: rgb(14, 9, 9);
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder
+    
+}
+
+#mytable {
+    border: 1px solid rgb(17, 16, 16);
+    border-collapse: collapse; 
+    cursor: pointer;
+    padding: 8px 8px 8px 8px;
+    font-size: 8px;
+    transition: 0.2s;
+    background-color: white;
+    width: 98%
+}
+
+#mytable1 {
+    border: 1px solid black;
+    border-collapse: collapse; 
+    cursor: pointer;
+    padding: 8px 8px 8px 8px;
+    font-size: 8px;
+    transition: 0.2s;
+    background-color: rgb(248, 246, 246);
+    width: 98% 
+
+}
+
+#matNome {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 20%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#matQuant {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 17%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#matCusto {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 10%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#matNF {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 20%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#nome_mat {
+    margin: 10px 0px 10px 10px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 40%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#quant_mat {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 8%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#cust_mat {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 18%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#nf_mat {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 27%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#FornNome {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 20%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#FornCat {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 17%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#FornTel {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 10%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#FornDesc {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 20%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#nome_Forn {
+    margin: 10px 0px 10px 10px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 30%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#cat_Forn {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 18%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#tel_Forn {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 20%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#desc_Forn {
+    margin: 0px;
+    border: 1px solid rgb(35, 22, 24);
+    width: 25%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+
+
+table,
+th,
+td {
+    text-align: start;
+    padding: 12px 8px 12px 10px;
+    font-size: 18px;
+    border: 2px solid rgb(19, 18, 18);
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    
+}
+
+table {
+    width: 90%;
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+th:nth-child(1) {
+    width: 50%;
+}
+
+th:nth-child(2) {
+    width: 12%;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
